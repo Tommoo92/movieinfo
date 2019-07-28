@@ -16,7 +16,7 @@ export class Container extends React.Component {
     }
     async getMovies(title, type, year){
         var url = movieApiUrl + '&t='+title+'&plot=full';
-        var data = await fetch(url)    
+        await fetch(url)    
         .then((response) => response.json())
         .then((responseJSON) => {
            // do stuff with responseJSON here...

@@ -1,16 +1,62 @@
 .App {
   #menu{
-      height: auto;
+      height: 70px;
       width: 100%;
       background-color: #ffc342;
       color: black;
       display: inline-flex;
-      padding: 10px;
+      padding: 5px;
+
+      img{
+        height: 100%;
+      }
+
+      nav{
+        padding: 5px 5px 5px 10px;
+        position: absolute;
+        top: 119px;
+        left: 0;
+        height: 50px;
+      }
 
       div{
         font-size: 45px;
         font-weight: bold;
       }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+  
+  li {
+    float: left;
+    height: 100%;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 100%;
+    font-size: 27px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  button{
+    background-color: white;
+    border: none;
   }
   
   #movie{
@@ -21,6 +67,42 @@
     }
   }
 }
+
+.list{
+  display: grid;
+
+  .listItem{
+    display: inline-flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    
+    h2{
+      margin-right: 10px;
+      margin-top:30px;
+    }
+    h3{
+      margin-top: 35px;
+    }
+    
+    div{
+      margin-left: 10px;
+    }
+
+    .meta{
+      margin-top:42px;
+      display: inline-flex;
+    }
+
+    img{
+      height:100px;
+    }
+
+    .mainImg{
+      height:300px !important;
+    }
+  }
+}
+
 
 .bold{
   font-weight: bold;

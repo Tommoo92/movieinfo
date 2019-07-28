@@ -38,7 +38,7 @@ export class Result extends React.Component {
                 </div>
                 ):(
                     <div className="notFoundBox">
-                        <img className="notFound" src={notFound}></img>
+                        <img className="notFound" src={notFound} alt="error"></img>
                     </div>
                 )
                 }
