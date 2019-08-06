@@ -1,14 +1,29 @@
 .App {
   #menu{
-      height: 70px;
+      height: 123px;
       width: 100%;
-      background-color: #ffc342;
       color: black;
-      display: inline-flex;
-      padding: 5px;
+      #upper{
+        height: 50%;
+        width: 100%;
+        display: flex;
 
-      img{
-        height: 100%;
+        img{
+          height: 100%;
+        }
+        
+        select{
+          float: right;
+        }
+        div{
+          font-size: 45px;
+          font-weight: bold;
+          display: initial;
+        }
+      }
+      #lower{
+        height: 50%;
+        width: 100%;
       }
 
       nav{
@@ -19,10 +34,6 @@
         height: 50px;
       }
 
-      div{
-        font-size: 45px;
-        font-weight: bold;
-      }
   }
 
   ul {
@@ -120,3 +131,10 @@
   }
 }
 
+.yellow{
+  background-color: #ffc342;
+}
+
+.purple{
+  background-color: purple;
+}

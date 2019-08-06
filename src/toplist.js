@@ -31,7 +31,7 @@ export class TopList extends React.Component {
     render(){
         if(that.state.list.length === undefined){
             var list = that.state.list.data.movies.map((item, i) => {
-                return <div key={i} className="listItem"><h2>{i+1}</h2>  <Popup trigger={<button> <img src={item.urlPoster}></img></button>} position="right center"><div><img className="mainImg" src={item.urlPoster}></img></div></Popup><h3>{item.title}</h3><div className="meta"><div className="bold">Rating: </div>{item.rating} <div className="bold">Year: </div>{item.year}</div></div>;
+                return <div key={i} className="listItem"><h2>{i+1}</h2>  <Popup trigger={<button> <img alt="error" src={item.urlPoster}></img></button>} position="right center"><div><img alt="error" className="mainImg" src={item.urlPoster}></img></div></Popup><h3>{item.title}</h3><div className="meta"><div className="bold">Rating: </div>{item.rating} <div className="bold">Year: </div>{item.year}</div></div>;
               });
             return (
                 <div className="container list"> 
